@@ -15,24 +15,18 @@ export function TaskList() {
   const [newTaskTitle, setNewTaskTitle] = useState('');
 
   function handleCreateNewTask() {
-    let text = (document.getElementById('text-input') as HTMLFormElement);
+    if (!newTaskTitle) return;
 
-    if (text.value === "") {
-      alert('[ERRO] Impossível criar com título vazio.')
-    } else {
-      let date = new Date();
+    let date = new Date();
 
-      let newTask: Task = {
-        id: date.getTime(),
-        title: text.value,
-        isComplete: false
-      }
-
-      setTasks([
-        ...tasks,
-        newTask
-      ])
+    let newTask: Task = {
+      id: date.getTime(),
+      title: newTaskTitle,
+      isComplete: false,
     }
+
+    setTasks(oldState => [...oldState, newTask])
+    setNewTaskTitle('')
   }
 
   function handleToggleTaskCompletion(id: number) {
