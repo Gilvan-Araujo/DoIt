@@ -21,7 +21,8 @@
 
 body {
     font: 16px "Poppins", Arial, sans-serif;
-    color: #121214;
+
+    background-color: var(--blue-900);
 }
 
 input,
@@ -32,4 +33,10 @@ textarea {
 button,
 .checkmark {
     cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: #ffffff;
+    }
 }
