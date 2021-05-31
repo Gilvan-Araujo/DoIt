@@ -1,8 +1,15 @@
-import '../styles/global.scss'
+import '../styles/global.scss';
+
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
+    <>
+      <Head>
+        <title>do.it - Tasklist</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
   )
 }
 
