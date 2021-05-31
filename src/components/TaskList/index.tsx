@@ -57,7 +57,7 @@ export function TaskList() {
                         value={newTaskTitle}
                         id="text-input"
                     />
-                    <button type="submit" data-testid="add-task-button" onClick={handleCreateNewTask}>
+                    <button aria-label="Create new task" type="submit" data-testid="add-task-button" onClick={handleCreateNewTask}>
                         <FiCheckSquare size={16} color="#fff" />
                     </button>
                 </div>
