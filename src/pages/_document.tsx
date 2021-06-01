@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
             <Html lang="en-US">
                 <Head>
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
-                    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
                     <meta name='description' content='Task list application where you can add, remove or mark them as completed.' />
                     <meta name='keywords' content='todo productivity tasks' />
