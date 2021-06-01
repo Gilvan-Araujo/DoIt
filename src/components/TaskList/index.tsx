@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { HiOutlinePlus, HiOutlineTrash } from 'react-icons/hi';
 
-import styles from './styles.module.scss'
+import {
+    Box, Button, Flex, Heading, Icon, Input, ListItem, Text, UnorderedList
+} from '@chakra-ui/react';
 
-import { HiOutlineTrash, HiOutlinePlus } from 'react-icons/hi'
-import { Box, Button, Flex, Heading, Icon, Input, ListItem, TagLabel, Text, UnorderedList } from '@chakra-ui/react';
+import styles from './styles.module.scss';
 
 type Task = {
     id: number;
@@ -48,20 +50,21 @@ export function TaskList() {
     return (
         <Flex
             as="section"
+            className={styles.taskList}
             bg="gray.800"
-            borderRadius={4}
+            borderRadius={8}
             maxW="70rem"
             mx="auto"
             px={16}
             py={14}
-            display="flex"
             flexDirection="column"
         >
             <Flex
                 as="header"
-                direction={["column", "row"]}
+                color="gray.100"
+                flexDir={["column", "row"]}
+                justifyContent="space-between"
                 alignItems="center"
-                w="fit-content"
             >
                 <Heading
                     as="h2"
@@ -73,40 +76,38 @@ export function TaskList() {
                 </Heading>
                 <Flex
                     as="div"
+                    fontSize="16px"
                     h={4}
                     direction={["column", "row"]}
-                    gridGap={1}
+                    gridGap={2}
                     alignItems="center"
                 >
                     <Input
                         type="text"
-                        h='full'
                         placeholder="Add new task"
-                        _placeholder={{ color: '#EDF2F7' }}
                         onChange={(e) => setNewTaskTitle(e.target.value)}
                         value={newTaskTitle}
                         id="text-input"
-                        flex="1"
-                        bg="gray.700"
                         color="gray.100"
+                        bg="gray.700"
                         px={6}
-                        py={5}
-                        borderRadius={2}
+                        py={3}
+                        borderRadius="0.5rem"
                         border={0}
                     />
                     <Box
                         as="button"
                         fontWeight="700"
-                        borderRadius={2}
+                        borderRadius="0.5rem"
                         border={0}
                         bg="green.500"
                         color="gray.100"
                         display="flex"
-                        flexDirection="row"
+                        flexDir="row"
                         alignItems="center"
                         p={3}
-                        transition='all 200ms'
                         _hover={{ bg: "green.600" }}
+                        transition='all 200ms'
                         aria-label="Create new task"
                         type="submit"
                         onClick={handleCreateNewTask}
@@ -123,18 +124,25 @@ export function TaskList() {
             <Flex
                 as="main"
                 mt="3rem"
+                w='100%'
                 className={styles.main}
             >
                 <UnorderedList>
                     {tasks.map(task => (
                         <ListItem
+                            as="li"
                             key={task.id}
-                            display="flex"
-                            justifyContent="space-between"
-                            alignItems="center"
-                            borderBottom="1px solid #718096"
-                            px="1rem"
-                            py={0}
+                            // display="flex"
+                            // justifyContent="space-between"
+                            // alignItems="center"
+                            // borderBottom="1px solid #718096"
+
+                            // minW='full'
+                            // display="flex"
+                            // justifyContent="space-between"
+                            // alignItems="center"
+                            // borderBottom="1px solid #718096"
+                            // px="1rem"
                         >
                             <Flex
                                 as="div"
