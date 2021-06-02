@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { HiOutlinePlus, HiOutlineTrash } from 'react-icons/hi';
 
 import {
@@ -16,6 +16,18 @@ type Task = {
 export function TaskList() {
     const [tasks, setTasks] = useState<Task[]>([]);
     const [newTaskTitle, setNewTaskTitle] = useState('');
+
+    useEffect(() => {
+        setTasks([{
+            id: 1,
+            title: 'Task example',
+            isComplete: false
+        }, {
+            id: 2,
+            title: 'Completed task example',
+            isComplete: true
+        }])
+    }, [])
 
     function handleCreateNewTask() {
         if (!newTaskTitle) return;
@@ -53,6 +65,7 @@ export function TaskList() {
             className={styles.taskList}
             bg="gray.800"
             borderRadius={8}
+            w='100%'
             maxW="70rem"
             mx="auto"
             px={16}
@@ -62,15 +75,16 @@ export function TaskList() {
             <Flex
                 as="header"
                 color="gray.100"
-                flexDir={["column", "row"]}
+                flexDir={["column", "column", "row"]}
                 justifyContent="space-between"
                 alignItems="center"
+                mb={[12, 12, 0]}
             >
                 <Heading
                     as="h2"
                     textAlign="center"
                     fontSize="4xl"
-                    pb={[16, 0]}
+                    pb={[8, 8, 0]}
                 >
                     My tasks
                 </Heading>
@@ -79,7 +93,7 @@ export function TaskList() {
                     fontSize="16px"
                     h={4}
                     direction={["column", "row"]}
-                    gridGap={2}
+                    gridGap={4}
                     alignItems="center"
                 >
                     <Input
@@ -107,7 +121,7 @@ export function TaskList() {
                         alignItems="center"
                         p={3}
                         _hover={{ bg: "green.600" }}
-                        transition='all 200ms'
+                        transition='background 250ms'
                         aria-label="Create new task"
                         type="submit"
                         onClick={handleCreateNewTask}
@@ -124,30 +138,25 @@ export function TaskList() {
             <Flex
                 as="main"
                 mt="3rem"
-                w='100%'
                 className={styles.main}
             >
-                <UnorderedList>
+                <UnorderedList
+                    w='100%'
+                >
                     {tasks.map(task => (
                         <ListItem
                             as="li"
                             key={task.id}
-                            // display="flex"
-                            // justifyContent="space-between"
-                            // alignItems="center"
-                            // borderBottom="1px solid #718096"
-
-                            // minW='full'
-                            // display="flex"
-                            // justifyContent="space-between"
-                            // alignItems="center"
-                            // borderBottom="1px solid #718096"
-                            // px="1rem"
+                            display="flex"
+                            justifyContent="space-between"
+                            alignItems="center"
+                            borderBottom="1px solid #718096"
+                            py="1rem"
                         >
                             <Flex
                                 as="div"
                                 align="center"
-                                gridGap="14px"
+                                gridGap="0.875rem"
                                 outline={0}
                                 className={task.isComplete ? styles.completed : ''}
                             >
@@ -156,6 +165,12 @@ export function TaskList() {
                                 >
                                     <Input
                                         type="checkbox"
+                                        position="absolute"
+                                        opacity={0}
+                                        cursor="pointer"
+                                        h={0}
+                                        w={0}
+                                        aria-label="Checkmark"
                                         readOnly
                                         checked={task.isComplete}
                                         onClick={() => handleToggleTaskCompletion(task.id)}
@@ -167,8 +182,16 @@ export function TaskList() {
                                 </Text>
                             </Flex>
 
-                            <Button>
-                                <Icon as={HiOutlineTrash} onClick={() => handleRemoveTask(task.id)} />
+                            <Button
+                                border={0}
+                                onClick={() => handleRemoveTask(task.id)}
+
+                            >
+                                <Icon
+                                    as={HiOutlineTrash}
+                                    color='red.500'
+                                    aria-label="Remove task"
+                                />
                             </Button>
                         </ListItem>
                     ))}

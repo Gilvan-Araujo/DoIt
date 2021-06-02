@@ -1,5 +1,3 @@
-import '../styles/global.scss';
-
 import Head from 'next/head';
 
 import { ChakraProvider } from '@chakra-ui/react';

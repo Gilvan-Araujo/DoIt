@@ -7,7 +7,7 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** gilvan-araujo, todonext, twitter_handle, gilvanjunior@protonmail.com, To.Do, Task list application made in React as the first challenge of Rocketseat's Ignite program.
+*** gilvan-araujo, doit, twitter_handle, gilvanjunior@protonmail.com, To.Do, Task list application made in React as the first challenge of Rocketseat's Ignite program.
 -->
 
 <!-- PROJECT SHIELDS -->
@@ -28,23 +28,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/gilvan-araujo/todonext">
+  <a href="https://github.com/gilvan-araujo/doit">
     <img src="public/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">To.Do</h3>
+  <h3 align="center">do.it</h3>
 
   <p align="center">
     Task list application made in React as the first challenge of Rocketseat's Ignite program.
     <br />
-    <a href="https://github.com/gilvan-araujo/todonext"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/gilvan-araujo/doit"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/gilvan-araujo/todonext">View Demo</a>
+    <a href="https://github.com/gilvan-araujo/doit">View Demo</a>
     ·
-    <a href="https://github.com/gilvan-araujo/todonext/issues">Report Bug</a>
+    <a href="https://github.com/gilvan-araujo/doit/issues">Report Bug</a>
     ·
-    <a href="https://github.com/gilvan-araujo/todonext/issues">Request Feature</a>
+    <a href="https://github.com/gilvan-araujo/doit/issues">Request Feature</a>
   </p>
 </p>
 
@@ -77,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![To.D Screenshot](https://user-images.githubusercontent.com/45008443/120032597-cdb18c80-bfd0-11eb-9325-5a1c19eb505f.png)](https://to-do-next-blue.vercel.app/)
+[![do.it Screenshot](https://user-images.githubusercontent.com/45008443/120551090-0637d880-c3cc-11eb-826f-6ff6b2bf7b61.png)](https://do-it-grey.vercel.app/)
 
 ### Built With
 
@@ -85,6 +85,7 @@
 * [Next.JS](https://nextjs.org/)
 * [Typescript](https://www.typescriptlang.org/)
 * [SASS](https://sass-lang.com/)
+* [ChakraUI](https://chakra-ui.com/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -119,7 +120,7 @@ To get a local copy up and running follow these simple steps.
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/gilvan-araujo/todonext.git
+   git clone https://github.com/gilvan-araujo/doit.git
    ```
 
 2. Install yarn packages
@@ -138,7 +139,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/gilvan-araujo/todonext/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/gilvan-araujo/doit/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -161,7 +162,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Gilvan Araújo - gilvanjunior@protonmail.com
 
-Project Link: [https://github.com/gilvan-araujo/todonext](https://github.com/gilvan-araujo/todonext)
+Project Link: [https://github.com/gilvan-araujo/doit](https://github.com/gilvan-araujo/doit)
 
 <!-- ACKNOWLEDGEMENTS -->
 <!-- ## Acknowledgements
@@ -172,15 +173,15 @@ Project Link: [https://github.com/gilvan-araujo/todonext](https://github.com/gil
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/gilvan-araujo/todonext.svg?style=for-the-badge
-[contributors-url]: https://github.com/gilvan-araujo/todonext/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/gilvan-araujo/todonext.svg?style=for-the-badge
-[forks-url]: https://github.com/gilvan-araujo/todonext/network/members
-[stars-shield]: https://img.shields.io/github/stars/gilvan-araujo/todonext.svg?style=for-the-badge
-[stars-url]: https://github.com/gilvan-araujo/todonext/stargazers
-[issues-shield]: https://img.shields.io/github/issues/gilvan-araujo/todonext.svg?style=for-the-badge
-[issues-url]: https://github.com/gilvan-araujo/todonext/issues
-[license-shield]: https://img.shields.io/github/license/gilvan-araujo/todonext.svg?style=for-the-badge
-[license-url]: https://github.com/gilvan-araujo/todonext/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/gilvan-araujo/doit.svg?style=for-the-badge
+[contributors-url]: https://github.com/gilvan-araujo/doit/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/gilvan-araujo/doit.svg?style=for-the-badge
+[forks-url]: https://github.com/gilvan-araujo/doit/network/members
+[stars-shield]: https://img.shields.io/github/stars/gilvan-araujo/doit.svg?style=for-the-badge
+[stars-url]: https://github.com/gilvan-araujo/doit/stargazers
+[issues-shield]: https://img.shields.io/github/issues/gilvan-araujo/doit.svg?style=for-the-badge
+[issues-url]: https://github.com/gilvan-araujo/doit/issues
+[license-shield]: https://img.shields.io/github/license/gilvan-araujo/doit.svg?style=for-the-badge
+[license-url]: https://github.com/gilvan-araujo/doit/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/gilvan-araujo

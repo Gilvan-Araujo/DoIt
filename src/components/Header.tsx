@@ -20,7 +20,9 @@ export function Header() {
       >
         <Image
           src="/logo.svg"
+          alt="Do It Tasklist "
           height={7}
+          w='auto'
         />
       </Flex>
     </Flex>
