@@ -114,13 +114,13 @@ export function TaskList() {
                         fontWeight="700"
                         borderRadius="0.5rem"
                         border={0}
-                        bg="green.500"
+                        bg="blue.500"
                         color="gray.100"
                         display="flex"
                         flexDir="row"
                         alignItems="center"
                         p={3}
-                        _hover={{ bg: "green.600" }}
+                        _hover={{ bg: "blue.600" }}
                         transition='background 250ms'
                         aria-label="Create new task"
                         type="submit"
